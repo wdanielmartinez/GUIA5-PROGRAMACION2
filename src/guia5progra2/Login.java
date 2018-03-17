@@ -1,8 +1,9 @@
 
 package guia5progra2;
 
+import Frames.Menu;
 import java.awt.Component;
-import java.awt.Menu;
+//import java.awt.Menu;
 import javax.swing.JOptionPane;
 
 
@@ -175,24 +176,24 @@ public class Login extends javax.swing.JFrame {
        }else if(txtUsuario.getText().equals("") && txtPassword.getText().equals("")){
         JOptionPane.showMessageDialog(this,"Usuario y/o Contraseña estan vacios\nIngrese los por favor.");
         txtUsuario.setFocusable(true);
-    }else if(txtUsuario.getText().equals("")){
+       }else if(txtUsuario.getText().equals("")){
         JOptionPane.showMessageDialog(this,"Usuario está vacio\nIngrese lo por favor.");
         txtUsuario.setFocusable(true);
-    }else if(txtPassword.getText().equals("")){
+       }else if(txtPassword.getText().equals("")){
         JOptionPane.showMessageDialog(this,"Contraseña está vacio\nIngrese lo por favor.");
         txtPassword.setFocusable(true);
-    }
-    else if(txtUsuario.getText().compareTo(usuario)!=0 && txtPassword.getText().compareTo(password)!=0){
+       }
+        else if(txtUsuario.getText().compareTo(usuario)!=0 && txtPassword.getText().compareTo(password)!=0){
         JOptionPane.showMessageDialog(this,"Usuario y/o Contraseña no válidos\nIngrese nuevamente.");
-         txtUsuario.setFocusable(true);
-    }
-    else if(txtUsuario.getText().compareTo(usuario)!=0){
+        txtUsuario.setFocusable(true);
+        }
+        else if(txtUsuario.getText().compareTo(usuario)!=0){
         JOptionPane.showMessageDialog(this,"Usuario no válido\nIngrese nuevamente.");
         txtUsuario.setFocusable(true);
-    }else if(txtPassword.getText().compareTo(password)!=0){
+        }else if(txtPassword.getText().compareTo(password)!=0){
         JOptionPane.showMessageDialog(this,"Contraseña no válida\nIngrese nuevamente.");
         txtPassword.setFocusable(true);
-    }
+        }
     }//GEN-LAST:event_jbtnIniciarSesionActionPerformed
 
     /**
